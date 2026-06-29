@@ -1,0 +1,586 @@
+/* ============================================================
+   PROJECT DATA — single source of truth for cards & detail pages.
+   EDIT here to change everything about a project.
+
+   ADD A SCREENSHOT (card + detail hero image):
+   1. Put the image in  public/images/  (e.g. public/images/helix.png)
+   2. Set  image: '/images/helix.png'  on that project below.
+   It replaces the colored placeholder on the card AND the detail page.
+   Leave image: '' to keep the gradient. Best size ~1600x900 (16:9).
+
+   ADD MORE SCREENSHOTS (gallery on the detail page only):
+   1. Put each image in  public/images/  (e.g. public/images/helix-2.png)
+   2. List [path, caption] pairs in that project's  gallery  array below.
+   Leave gallery: [] to hide the gallery section entirely.
+
+   ADD A WALKTHROUGH VIDEO (detail page only):
+   1. Put the file in  public/videos/  (e.g. public/videos/helix.mp4)
+   2. Set  video: '/videos/helix.mp4'  on that project below.
+   Shows as a "Walkthrough" section with native HTML5 controls, right
+   after the hero image. Leave video unset / '' to hide it.
+
+   "VIEW LIVE PROJECT" BUTTON:
+   Set  link  to the real URL to show the button. Leave it ''  or '#'
+   (no live link yet) and the button is hidden automatically.
+
+   TYPOGRAPHY NOTE:
+   Set  typeNote  to show a small disclaimer under the Typography
+   block (e.g. when a typeface is proprietary to the client and
+   isn't yours to redistribute). Leave it unset / '' to hide it.
+   Optionally set  typeNoteLink  to make part of it a clickable link.
+
+   COLOR PALETTE NOTE:
+   Same idea as the typography note, but under the Color palette
+   block. Set  paletteNote  (and optional  paletteNoteLink ) — e.g.
+   to credit a design system the palette is based on.
+
+   COMBINED DESIGN NOTE (no palette/type sections at all):
+   If a project has no palette or type data to show (palette: [],
+   type: []), set  designNote  (and optional  designNoteLink )
+   instead — it renders as a single standalone note covering both,
+   e.g. "built on an external design system, see it at <link>".
+
+   ADD A PROJECT: copy a block, give it a unique `id`, set
+   category to 'frontend' or 'uiux'. It appears automatically.
+   To show a project in BOTH sections, set category to an array:
+   category: ['frontend', 'uiux'].
+   ============================================================ */
+
+export const projects = [
+  {
+    id: "GACA-ES",
+    category: "frontend",
+    title: "GACA E-services",
+    cardMeta: ["Web App", "2024"],
+    meta: "Frontend · Web App · 2024",
+    grad: "linear-gradient(135deg,#2C46F0,#5B8CFF)",
+    badge: "Gaca E-services",
+    image: "/images/thumbnail-2.png",
+    gallery: [
+      ["/images/Gaca-Es10.png", "ES Login"],
+      ["/images/Gaca-Es11.png", "ES Register"],
+      ["/images/Gaca-Es1.png", "ES Home"],
+      ["/images/Gaca-Es2.png", "ES Home-2"],
+      ["/images/Gaca-Es3.png", "ES All Services"],
+      ["/images/Gaca-Es4.png", "ES User Applications"],
+      ["/images/Gaca-Es5.png", "ES Service Details"],
+      ["/images/Gaca-Es6.png", "ES Application Details"],
+      ["/images/Gaca-Es7.png", "ES Service Details"],
+      ["/images/Gaca-Es8.png", "ES My Application"],
+      ["/images/Gaca-Es9.png", "ES Service Details"],
+      ["/images/Gaca-Es12.png", "ES Application Details"],
+      ["/images/Gaca-Es13.png", "ES Complaint"],
+      ["/images/Gaca-Es14.png", "ES Complaint"],
+      ["/images/Gaca-Es15.png", "ES Complaint"],
+    ],
+    tags: ["React", "JSX", "Vite", "GACA design system", "Bootstrap"],
+    cardDesc:
+      "GACA E-Services is a digital transformation initiative modernizing Saudi Arabia's civil aviation system, centralizing all aviation services into one seamless government platform.",
+    desc: "GACA E-Services is a comprehensive digital transformation project for the General Authority of Civil Aviation in Saudi Arabia. The initiative brings together the full spectrum of aviation services into a unified digital platform, covering licensing, regulatory compliance, passenger rights, air operator management, and more. The project aims to elevate the experience for airlines, airports, service providers, and passengers alike, reflecting Saudi Arabia's broader push toward smart government services and the goals of Vision 2030.",
+    palette: [
+      ["#0175CA", "Primary"],
+      ["#264478", "Accent"],
+      ["#575757", "grey-300"],
+      ["#C8C8C8", "grey-200"],
+      ["#FFFFFF", "grey-100"],
+      ["#4CB19C", "Success-300"],
+      ["#84DCCA", "Success-200"],
+      ["#C4EEE5", "Success-100"],
+      ["#FAA21B", "Warning-300"],
+      ["#EBB562", "Warning-200"],
+      ["#F5CF96", "Warning-100"],
+      ["#F36B79", "Danger-300"],
+      ["#EE8791", "Danger-200"],
+      ["#F5B9BF", "Danger-100"],
+    ],
+    type: [
+      ["", ""],
+      ["", ""],
+    ],
+    typeNote:
+      "The typeface used in this project is proprietary and exclusively licensed to GACA. It is not available for public display.",
+    link: "#",
+  },
+  {
+    id: "GACA-CAREERS",
+    category: "frontend",
+    title: "GACA Careers",
+    cardMeta: ["Web app", "2024"],
+    meta: "Frontend · React · 2024",
+    grad: "linear-gradient(135deg,#0F2BB8,#2C46F0)",
+    badge: "Gaca Careers",
+    image: "/images/thumbnail-3.png",
+    gallery: [
+      ["/images/Gaca-careers-2.png", "Careers landing page"],
+      ["/images/Gaca-careers-1.png", "Job listings"],
+      ["/images/Gaca-careers-3.png", "applying-1"],
+      ["/images/Gaca-careers-4.png", "applying-2"],
+      ["/images/Gaca-careers-5.png", "applying-3"],
+      ["/images/Gaca-careers-6.png", "applying-4"],
+      ["/images/Gaca-careers-7.png", "applying-5"],
+      ["/images/Gaca-careers-8.png", "applying-6"],
+    ],
+    tags: ["React", "Bootstrap", "GACA design system"],
+    cardDesc:
+      "Developing the careers portal for GACA, Saudi Arabia's civil aviation regulator, to attract top talent across aviation, tech, and regulatory roles.",
+    desc: "GACA Careers is a digital platform built for the General Authority of Civil Aviation in Saudi Arabia. The project focuses on creating a seamless recruitment experience that connects qualified candidates with opportunities across aviation safety, engineering, cybersecurity, legal, and administrative functions, supporting GACA's mission to build a world-class civil aviation ecosystem.",
+    palette: [
+      ["#0175CA", "Primary"],
+      ["#264478", "Accent"],
+      ["#575757", "grey-300"],
+      ["#C8C8C8", "grey-200"],
+      ["#FFFFFF", "grey-100"],
+      ["#4CB19C", "Success-300"],
+      ["#84DCCA", "Success-200"],
+      ["#C4EEE5", "Success-100"],
+      ["#FAA21B", "Warning-300"],
+      ["#EBB562", "Warning-200"],
+      ["#F5CF96", "Warning-100"],
+      ["#F36B79", "Danger-300"],
+      ["#EE8791", "Danger-200"],
+      ["#F5B9BF", "Danger-100"],
+    ],
+    type: [
+      ["", ""],
+      ["", ""],
+    ],
+    typeNote:
+      "The typeface used in this project is proprietary and exclusively licensed to GACA. It is not available for public display.",
+    link: "",
+  },
+  {
+    id: "Drone",
+    category: "frontend",
+    title: "GACA Drone",
+    cardMeta: ["Web App", "2024"],
+    meta: "Frontend · React · 2024",
+    grad: "linear-gradient(135deg,#1733D6,#6E92FF)",
+    badge: "Gacac Drone",
+    image: "/images/thumbnail-4.png",
+    gallery: [
+      ["/images/Drone-2.png", "Drone Landing"],
+      ["/images/drone-1.png", "Drone Login"],
+    ],
+    tags: ["React", "JSX", "Vite", "GACA Design System", "Bootstrap"],
+    cardDesc:
+      "GACA Drone is a landing platform presenting drone registration terms and conditions for both individual users and commercial entities operating under GACA regulations.",
+    desc: "GACA Drone is an application built to serve as the entry point for drone operators across Saudi Arabia. While the core system was developed independently, this application was created to provide a clear and accessible landing experience where users can review the terms and conditions before proceeding. The platform caters to two distinct audiences, individuals registering personal drones and companies seeking commercial operational approvals, ensuring both groups are informed of the regulatory requirements set by the General Authority of Civil Aviation before engaging with the full system.",
+    palette: [
+      ["#0175CA", "Primary"],
+      ["#264478", "Accent"],
+      ["#575757", "grey-300"],
+      ["#C8C8C8", "grey-200"],
+      ["#FFFFFF", "grey-100"],
+      ["#4CB19C", "Success-300"],
+      ["#84DCCA", "Success-200"],
+      ["#C4EEE5", "Success-100"],
+      ["#FAA21B", "Warning-300"],
+      ["#EBB562", "Warning-200"],
+      ["#F5CF96", "Warning-100"],
+      ["#F36B79", "Danger-300"],
+      ["#EE8791", "Danger-200"],
+      ["#F5B9BF", "Danger-100"],
+    ],
+    type: [[""], [""]],
+    typeNote:
+      "The typeface used in this project is proprietary and exclusively licensed to GACA. It is not available for public display.",
+    link: "#",
+  },
+  {
+    id: "Medical",
+    category: "frontend",
+    title: "GACA Medical",
+    cardMeta: ["web app", "2022"],
+    meta: "Frontend · React · 2022",
+    grad: "linear-gradient(135deg,#3450FF,#9AB2FF)",
+    badge: "AV Med",
+    image: "/images/thumbnail-5.png",
+    gallery: [
+      ["/images/screenshots/01.Ame_individual.jpg", "01.Ame_individual"],
+      ["/images/screenshots/01.Ame_Nafathlogin.jpg", "01.Ame_Nafathlogin"],
+      [
+        "/images/screenshots/01Applicant_individualLogin.jpg",
+        "01Applicant_individualLogin",
+      ],
+      [
+        "/images/screenshots/01Applicant_NafathLogin.jpg",
+        "01Applicant_NafathLogin",
+      ],
+      ["/images/screenshots/01LoginOTP.jpg", "01LoginOTP"],
+      ["/images/screenshots/01LoginOTP2.jpg", "01LoginOTP2"],
+      [
+        "/images/screenshots/03_Applicant_AME_List.png",
+        "03_Applicant_AME_List",
+      ],
+      [
+        "/images/screenshots/03Applicant2-MyCertificates1.png",
+        "03Applicant2-MyCertificates1",
+      ],
+      [
+        "/images/screenshots/04 Admin Medical Certificates.png",
+        "04 Admin Medical Certificates",
+      ],
+      ["/images/screenshots/04 Admin_AME3.png", "04 Admin_AME3"],
+      ["/images/screenshots/04 Admin_AME4.png", "04 Admin_AME4"],
+      ["/images/screenshots/04.Admin_AME2.png", "04.Admin_AME2"],
+      ["/images/screenshots/04.Admin_Applicants.png", "04.Admin_Applicants"],
+      ["/images/screenshots/04.Admin.png", "04.Admin"],
+      ["/images/screenshots/04.AdminReuests.png", "04.AdminReuests"],
+      [
+        "/images/screenshots/04Admin Requests2 request detalis.png",
+        "04Admin Requests2 request detalis",
+      ],
+      ["/images/screenshots/04Admin_AME.png", "04Admin_AME"],
+      ["/images/screenshots/05 AME 04 Renewal1.png", "05 AME 04 Renewal1"],
+      ["/images/screenshots/05 AME 04 Renewal2.png", "05 AME 04 Renewal2"],
+      ["/images/screenshots/05 AME_01_Home.png", "05 AME_01_Home"],
+      [
+        "/images/screenshots/05 AME_02_Request1_Verification.png",
+        "05 AME_02_Request1_Verification",
+      ],
+      ["/images/screenshots/05_AME_03_Profile.png", "05_AME_03_Profile"],
+      ["/images/screenshots/05AME_Request.png", "05AME_Request"],
+      ["/images/screenshots/06 AME_Register_01.png", "06 AME_Register_01"],
+      ["/images/screenshots/06 AME_Register_02.png", "06 AME_Register_02"],
+      [
+        "/images/screenshots/06 AME_Register_Edit-137.png",
+        "06 AME_Register_Edit-137",
+      ],
+      ["/images/screenshots/06 AME_Register_Edit.png", "06 AME_Register_Edit"],
+      [
+        "/images/screenshots/08_Applicant_Cancel_Edit.png",
+        "08_Applicant_Cancel_Edit",
+      ],
+      ["/images/screenshots/09_Contact_us.png", "09_Contact_us"],
+      ["/images/screenshots/Admin Config.png", "Admin Config"],
+
+      ["/images/screenshots/Applicant_MyRequest.png", "Applicant_MyRequest"],
+      [
+        "/images/screenshots/Applicant2-NewRequestStep2.png",
+        "Applicant2-NewRequestStep2",
+      ],
+      [
+        "/images/screenshots/Applicant2-NewRequestStep4.png",
+        "Applicant2-NewRequestStep4",
+      ],
+      [
+        "/images/screenshots/Applicant2-NewRequestStep5.png",
+        "Applicant2-NewRequestStep5",
+      ],
+      [
+        "/images/screenshots/Applicant2-RequiredDocuments.png",
+        "Applicant2-RequiredDocuments",
+      ],
+      [
+        "/images/screenshots/Applocant2-NewRequestStep1.png",
+        "Applocant2-NewRequestStep1",
+      ],
+
+      ["/images/screenshots/ErrorPage.png", "ErrorPage"],
+      ["/images/screenshots/home.png", "home"],
+
+      ["/images/screenshots/MedicalCertificate.png", "MedicalCertificate"],
+
+      ["/images/screenshots/newAccount.png", "newAccount"],
+      ["/images/screenshots/NewRequestSep3.png", "NewRequestSep3"],
+      ["/images/screenshots/NewRequestSep4.png", "NewRequestSep4"],
+      ["/images/screenshots/NewRequestStep1.png", "NewRequestStep1"],
+      ["/images/screenshots/NewRequestStep2.png", "NewRequestStep2"],
+      ["/images/screenshots/NewRequestStep5.png", "NewRequestStep5"],
+      ["/images/screenshots/Register_01.png", "Register_01"],
+
+      ["/images/screenshots/RegistrationB.png", "RegistrationB"],
+      ["/images/screenshots/RegistrationD.png", "RegistrationD"],
+      ["/images/screenshots/select.png", "select"],
+    ],
+    tags: ["React", "JSX", "Vite", "GACA Design System", "Bootstrap"],
+    cardDesc:
+      "GACA AvMed is a digital platform managing the issuance of medical certificates for pilots and flight attendants, streamlining the entire process from appointment booking to certificate generation.",
+    desc: "GACA AvMed is a specialized medical certification platform developed for the General Authority of Civil Aviation in Saudi Arabia. The system is designed for pilots and flight attendants who are required to hold a valid medical certificate to practice their roles. Through the platform, aviation professionals can book their medical examination appointments and once the tests are completed, results are automatically populated into the system. Based on the outcome, eligible candidates receive their official medical certificate digitally, ensuring a fast and paperless process. The platform brings structure and efficiency to a critical compliance requirement within the aviation sector, supporting both the safety standards of GACA and the career continuity of aviation personnel.",
+    palette: [
+      ["#0175CA", "Primary"],
+      ["#264478", "Accent"],
+      ["#575757", "grey-300"],
+      ["#C8C8C8", "grey-200"],
+      ["#FFFFFF", "grey-100"],
+      ["#4CB19C", "Success-300"],
+      ["#84DCCA", "Success-200"],
+      ["#C4EEE5", "Success-100"],
+      ["#FAA21B", "Warning-300"],
+      ["#EBB562", "Warning-200"],
+      ["#F5CF96", "Warning-100"],
+      ["#F36B79", "Danger-300"],
+      ["#EE8791", "Danger-200"],
+      ["#F5B9BF", "Danger-100"],
+    ],
+    type: [[], []],
+    typeNote:
+      "The typeface used in this project is proprietary and exclusively licensed to GACA. It is not available for public display.",
+
+    link: "#",
+  },
+  {
+    id: "TT-Careers",
+    category: "uiux",
+    title: "Tamkeen Technologies Careers",
+    cardMeta: ["UI/UX", "2025"],
+    meta: "UI/UX",
+    grad: "linear-gradient(135deg,#F23E6D,#FF8AA8)",
+    badge: "TT Careers",
+    image: "/images/thumbnail-6.png",
+    gallery: [
+      ["/images/TT-Careers-1.png", "newAccount"],
+      ["/images/TT-Careers-2.png", "newAccount"],
+      ["/images/TT-Careers-3.png", "newAccount"],
+    ],
+    tags: ["Figma", "UI", "UX", "Prototyping"],
+    cardDesc:
+      "Tamkeen Technologies Careers is a recruitment platform connecting fresh graduates and experienced professionals with opportunities in the tech sector.",
+    desc: "Tamkeen Technologies Careers is a dedicated recruitment platform built for a leading technology company in Saudi Arabia. The platform is designed to serve two distinct audiences, fresh graduates taking their first steps into the tech industry and experienced professionals looking to advance their careers. By providing a tailored experience for both groups, the platform streamlines the hiring journey from job discovery to application, reflecting Tamkeen Technologies commitment to building a diverse and capable workforce that drives innovation across the technology sector.",
+    palette: [
+      ["#FFE5EA", "Primary-25"],
+      ["#FFC4CF", "Primary-50"],
+      ["#FFA2B4", "Primary-100"],
+      ["#FF8098", "Primary-200"],
+      ["#FF5E7D", "Primary-300"],
+      ["#E43753", "Primary-400"],
+      ["#C10230", "Primary-500"],
+      ["#9E021E", "Primary-600"],
+      ["#7C0217", "Primary-700"],
+      ["#5A010F", "Primary-800"],
+      ["#3A0009", "Primary-900"],
+      ["#FFF4DB", "Secondary-25"],
+      ["#FFECC0", "Secondary-50"],
+      ["#FFE39A", "Secondary-100"],
+      ["#FFDA73", "Secondary-200"],
+      ["#FFD14D", "Secondary-300"],
+      ["#FFC726", "Secondary-400"],
+      ["#FFA400", "Secondary-500"],
+      ["#CC8300", "Secondary-600"],
+      ["#996200", "Secondary-700"],
+      ["#664200", "Secondary-800"],
+      ["#332100", "Secondary-900"],
+      ["#E5FFFE", "Accent-25"],
+      ["#C4FFFC", "Accent-50"],
+      ["#A2FFFA", "Accent-100"],
+      ["#80FFF9", "Accent-200"],
+      ["#5EFFF7", "Accent-300"],
+      ["#37E4DB", "Accent-400"],
+      ["#02C1B7", "Accent-500"],
+      ["#117777", "Accent-600"],
+      ["#7C0217", "Accent-700"],
+      ["#5A010F", "Accent-800"],
+      ["#003A37", "Accent-900"],
+      ["#EBF5F4", "Green-8"],
+      ["#E5F3F1", "Green-10"],
+      ["#CCE6E3", "Green-20"],
+      ["#B2DAD6", "Green-30"],
+      ["#99CDC8", "Green-40"],
+      ["#80C1BA", "Green-50"],
+      ["#66B5AC", "Green-60"],
+      ["#4DA89E", "Green-70"],
+      ["#339C91", "Green-80"],
+      ["#1A8F83", "Green-90"],
+      ["#008375", "Green-100"],
+      ["#ECF5FA", "Pantone-8"],
+      ["#E8F2F9", "Pantone-10"],
+      ["#D1E6F3", "Pantone-20"],
+      ["#B9D9EE", "Pantone-30"],
+      ["#A2CDE8", "Pantone-40"],
+      ["#8BC1E2", "Pantone-50"],
+      ["#74B4DC", "Pantone-60"],
+      ["#5DA7D6", "Pantone-70"],
+      ["#459BD1", "Pantone-80"],
+      ["#2E8FCB", "Pantone-90"],
+      ["#1782C5", "Pantone-100"],
+      ["#FFF0EC", "Orange-8"],
+      ["#FFEDE7", "Orange-10"],
+      ["#FFDAD0", "Orange-20"],
+      ["#FFC8B8", "Orange-30"],
+      ["#FFB5A1", "Orange-40"],
+      ["#FFA389", "Orange-50"],
+      ["#FF9171", "Orange-60"],
+      ["#FF7E5A", "Orange-70"],
+      ["#FF6C42", "Orange-80"],
+      ["#FF592B", "Orange-90"],
+      ["#FF4713", "Orange-100"],
+      ["#F7EEF6", "Purple-8"],
+      ["#F5E9F4", "Purple-10"],
+      ["#EBD4E9", "Purple-20"],
+      ["#E1BEDE", "Purple-30"],
+      ["#D7A9D3", "Purple-40"],
+      ["#CD93C7", "Purple-50"],
+      ["#C27EBC", "Purple-60"],
+      ["#B869B1", "Purple-70"],
+      ["#AE53A6", "Purple-80"],
+      ["#A43E9B", "Purple-90"],
+      ["#9A2890", "Purple-100"],
+      ["#FFFAEB", "Yellow-8"],
+      ["#FFF9E6", "Yellow-10"],
+      ["#FFF3CD", "Yellow-20"],
+      ["#FFECB5", "Yellow-30"],
+      ["#FFE69C", "Yellow-40"],
+      ["#FFE083", "Yellow-50"],
+      ["#FFDA6A", "Yellow-60"],
+      ["#FFD451", "Yellow-70"],
+      ["#FFCD39", "Yellow-80"],
+      ["#FFC720", "Yellow-90"],
+      ["#FFC107", "Yellow-100"],
+      ["#F2F2F2", "Gray-8"],
+      ["#EFEFEF", "Gray-10"],
+      ["#DFDFDF", "Gray-20"],
+      ["#D0D0D0", "Gray-30"],
+      ["#C0C0C0", "Gray-40"],
+      ["#B0B0B0", "Gray-50"],
+      ["#A0A0A0", "Gray-60"],
+      ["#919191", "Gray-70"],
+      ["#818181", "Gray-80"],
+      ["#717171", "Gray-90"],
+      ["#616161", "Gray-100"],
+      ["#F2F2F2", "Blue-8"],
+      ["#E9ECF1", "Blue-10"],
+      ["#D2D8E4", "Blue-20"],
+      ["#BCC5D6", "Blue-30"],
+      ["#A6B2C8", "Blue-40"],
+      ["#8F9EBA", "Blue-50"],
+      ["#798BAD", "Blue-60"],
+      ["#63789F", "Blue-70"],
+      ["#4D6591", "Blue-80"],
+      ["#365184", "Blue-90"],
+      ["#203E76", "Blue-100"],
+    ],
+    type: [[], []],
+    typeNote:
+      "The typeface used in this project is proprietary and exclusively licensed to Tamkeen Technologies. It is not available for public display.",
+
+    link: "#",
+  },
+  {
+    id: "Mzaya",
+    category: "uiux",
+    title: "Mzaya Monsha'at - DGA",
+    cardMeta: ["UI/UX", "2026"],
+    meta: "UI/UX · Design System",
+    grad: "linear-gradient(135deg,#D11A52,#F23E6D)",
+    badge: "◧",
+    image: "/images/thumbnail-7.png",
+    gallery: [
+      ["/images/home.png", "home"],
+      [
+        "/images/company-service provider page.png",
+        "company-service provider page",
+      ],
+      ["/images/all mzaya.png", "all mzaya"],
+      ["/images/service details.png", "service details"],
+      ["/images/SP-Dashboard.png", "SP-Dashboard"],
+      ["/images/SME-Dashboard.png", "SME-Dashboard"],
+      ["/images/Send-feedback.png", "Send-feedback"],
+      ["/images/add-services-s3.png", "add-services-s3"],
+      ["/images/add-services-s2.png", "add-services-s2"],
+      ["/images/add-services-s3-plan.png", "add-services-s3-plan"],
+      ["/images/add-services-s1.png", "add-services-s1"],
+    ],
+    tags: ["Figma", "UI", "UX"],
+    cardDesc:
+      "Mzaya Monsha'at is a B2B web application enabling business owners to seamlessly procure and pay for services from other companies, built on the DGA design system.",
+    desc: "Mzaya Monsha'at is a B2B web application developed to simplify how business owners access and pay for services offered by other companies. The platform creates a structured digital environment where transactions between businesses are handled efficiently and with clarity. The application was built following the Digital Government Authority design system, ensuring a consistent, accessible, and government-aligned user experience throughout the entire service journey.",
+    palette: [],
+    type: [],
+    designNote:
+      "This system's color palette and typography are built on the DGA design system — you can find it online at",
+    designNoteLink: "https://design.dga.gov.sa/",
+    link: "#",
+  },
+  {
+    id: "DGA-Chatbot",
+    category: ["frontend", "uiux"],
+    title: "DGA Chatbot",
+    cardMeta: ["Web App", "2026"],
+    meta: "Frontend · React · 2026",
+    grad: "linear-gradient(135deg,#1B8354,#1B8354)",
+    badge: "DGA Chatbot",
+    image: "",
+    video: "/videos/DGA-Chatbot.mp4",
+    gallery: [],
+    tags: ["React", "Figma", "DGA Design System"],
+    cardDesc:
+      "A modern chatbot for DGA spanning News, Help, Chatbot, and Tickets, with a home feed of the latest events sorted by date.",
+    desc: "A modern chatbot platform designed and developed for DGA, organized into four categories — News, Help, Chatbot, and Tickets. The home page surfaces the latest events, sorted by date, so users land on what's current the moment they arrive. Built with React on the front end, designed in Figma using DGA's own design system for a consistent, on-brand experience.",
+    palette: [],
+    type: [],
+    designNote:
+      "This system's color palette and typography are built on the DGA design system — you can find it online at",
+    designNoteLink: "https://design.dga.gov.sa/",
+    link: "#",
+  },
+  {
+    id: "FSF",
+    category: "uiux",
+    title: "FSF learning Portal",
+    cardMeta: ["UI/UX", "2025"],
+    meta: "UI/UX",
+    grad: "linear-gradient(135deg,#E0285C,#FF7196)",
+    badge: "▦",
+    image: "/images/thumbnail-8.png",
+    gallery: [
+      ["/images/FSF-Home-1.png", "FSF-Home-1"],
+      ["/images/FSF-Home-2.png", "FSF-Home-2"],
+      ["/images/Course.png", "Course"],
+    ],
+    tags: ["UI/UX", "Figma"],
+    cardDesc:
+      "FSF Learning Portal is an internal platform offering employees structured courses, podcasts, and guided career roadmaps to support professional growth across multiple disciplines.",
+    desc: "FSF Course and Podcast Portal is a dedicated learning platform built for FSF employees, combining structured courses and podcasts into one unified experience. Beyond individual content, the portal offers thoughtfully designed career roadmaps that guide employees through curated learning packages tailored to specific career paths. For example, an employee looking to build a career in cybersecurity will find a complete roadmap outlining the recommended courses and relevant podcasts to follow, giving them a clear and actionable path forward. The platform empowers employees to take ownership of their professional development while aligning their growth with the skills and directions that matter most to the organization.",
+    palette: [
+      ["#D8E5D9", "Brand-100"],
+      ["#B0CBB3", "Brand-200"],
+      ["#89B08C", "Brand-300"],
+      ["#619666", "Brand-400"],
+      ["#3A7C40", "Brand-500"],
+      ["#296E2F", "Brand-600"],
+      ["#195A1F", "Brand-700"],
+      ["#0E3E12", "Brand-800"],
+      ["#062609", "Brand-900"],
+      ["#FFFFFF", "Grey-100"],
+      ["#EEF0EE", "Grey-200"],
+      ["#DDE0DD", "Grey-300"],
+      ["#C9CCC9", "Grey-400"],
+      ["#BBBFBB", "Grey-500"],
+      ["#969996", "Grey-600"],
+      ["#7D807D", "Grey-700"],
+      ["#646664", "Grey-800"],
+      ["#323332", "Grey-900"],
+      ["#252625", "Grey-950"],
+      ["#191A19", "Grey-1000"],
+      ["#F2D4D4", "Error-100"],
+      ["#E6AEAE", "Error-200"],
+      ["#741111", "Error-300"],
+      ["#620505", "Error-400"],
+      ["#D4E7F1", "Info-100"],
+      ["#AED3E5", "Info-200"],
+      ["#115273", "Info-300"],
+      ["#054261", "Info-400"],
+      ["#DEF1D4", "Succese-100"],
+      ["#C0E5AE", "Succese-200"],
+      ["#327311", "Succese-300"],
+      ["#246105", "Succese-400"],
+      ["#D4E7F1", "Worning-100"],
+      ["#AED3E5", "Worning-200"],
+      ["#115273", "Worning-300"],
+      ["#054261", "Worning-400"],
+    ],
+    type: [
+      ["", ""],
+      ["", ""],
+    ],
+    typeNote:
+      "The typeface used in this project is proprietary and is not available for public display.",
+    link: "#",
+  },
+];
+
+export const getProject = (id) => projects.find((p) => p.id === id);
+
+// category can be a single string ('frontend' | 'uiux') or an array of both
+export const hasCategory = (p, cat) => (Array.isArray(p.category) ? p.category.includes(cat) : p.category === cat);
+export const primaryCategory = (p) => (Array.isArray(p.category) ? p.category[0] : p.category);
